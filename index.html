@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>khairbangla Es mosq</title>
-</head>
-<body>
-    
-</body>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Donate Khairbangla es Mosque </title>
+          
+            <!-- CDN LINK -->
+
+            <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       
+        </head>
+        <body class="bg-gray-100">
+            <header class="bg-[#f9f7f3] shadow-md p-4 flex justify-evenly items-center">
+                <button id="btn-blog" class="bg-lime-500 text-white px-5 py-3 rounded-lg">Blog</button>
+                <h1 class="text-lg font-semibold flex items-center"><span class="mr-2 ">   </span> <img src="./assets/logo.png" alt="">Donate Khairbangla East Side Mosque</h1>
+                <div  class="text-yellow-500 font-semibold">💰 5500 BDT</div>
+            </header>
+        
+            <nav class="flex justify-center mt-4">
+                <button class="bg-lime-500 text-white px-4 py-2 rounded-l">Donation</button>
+                <button class="bg-gray-200 px-4 py-2 rounded-r">History</button>
+            </nav>
+        
+            <main class="p-4">
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <!-- Donation Card 1 -->
+                    <div class="bg-white p-4 rounded-lg shadow-md flex flex-col md:flex-row">
+                        <img src="./assets/3 front.jpg" alt="Flood Relief" class="w-full md:w-1/3 rounded-md">
+                        <div class="p-4">
+                            <div id="Donate-amount" class="text-yellow-500 font-semibold">💰 9400 BDT</div>
+                            <h2 class="font-bold text-lg">Donate for Khairbangla East Side Mosque, Netrakona Sadar</h2>
+                            <p class="text-sm text-gray-600">"Support Khairbangla East Side Mosque, Netrakona Sadar caused significant damage...</p>
+                            <input id="input-add-donation" type="text" placeholder="Write Donation Amount" class="w-full border p-2 mt-2">
+                            <button id="btn-donate-now" class="bg-lime-500 text-white px-4 py-2 mt-2 rounded w-full">Donate Now</button>
+                        </div>
+                    </div>
+                    <!-- Donation  Cards 2-->
+                    <div class="bg-white p-4 rounded-lg shadow-md flex flex-col md:flex-row">
+                        <img src="./assets/2.jpg" alt="Flood Relief" class="w-full md:w-1/3 rounded-md">
+                        <div class="p-4">
+                            <div class="text-yellow-500 font-semibold">💰 600 BDT</div>
+                            <h2 class="font-bold text-lg">Donate for Khairbangla East Side Mosque, Netrakona Sadar </h2>
+                            <p class="text-sm text-gray-600"> Donation for development and construction work at the mosque...</p>
+                            <input type="text" placeholder="Write Donation Amount" class="w-full border p-2 mt-2">
+                            <button class="bg-lime-500 text-white px-4 py-2 mt-2 rounded w-full">Donate Now</button>
+                        </div>
+                    </div>
+                   <!-- Donation Card 3 -->
+                    <div class="bg-white p-4 rounded-lg shadow-md flex flex-col md:flex-row">
+                        <img src="./assets/1 Main.jpg" alt="Aid for Injured" class="w-full md:w-1/3 rounded-md">
+                        <div class="p-4">
+                            <div class="text-yellow-500 font-semibold">💰 2400 BDT</div>
+                            <h2 class="font-bold text-lg">Donate for Khairbangla East Side Mosque, Netrakona Sadar</h2>
+                            <p class="text-sm text-gray-600">To please Allah, donate to the holy mosque and Allah's house....</p>
+                            <input type="text" placeholder="Write Donation Amount" class="w-full border p-2 mt-2">
+                            <button class="bg-lime-500 text-white px-4 py-2 mt-2 rounded w-full">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+                <script src="./js/addDonation.js"></script>
+                <script src="./js/blog.js"></script>
+        
+        </body>
+
+
+
+
 </html>
