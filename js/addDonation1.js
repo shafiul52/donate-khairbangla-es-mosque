@@ -26,12 +26,9 @@ document.getElementById('btn-donate-now')
      // Update  the dom with updated  balance 
      document.getElementById('Donate-amount').innerText = newDonate;
 
-
-
-    
-     
-  
 });
+
+
 
 
  
