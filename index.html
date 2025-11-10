@@ -18,11 +18,18 @@
                 <div  class="text-yellow-500 font-semibold">💰 5500 BDT</div>
             </header>
         
-            <nav class="flex justify-center mt-4">
+            <nav class=" flex justify-center mt-4">
                 <button id="donation-tab"class="bg-lime-500 text-white px-4 py-2 rounded-l">Donation</button>
                 <button id="history-tab" class="bg-gray-200 px-4 py-2 rounded-r">History</button>
+                <button id="show-transtion-history" class="btn btn-lg"> Transactions </button>
             </nav>
 
+              <div id="history-list"class="grid grid-cols-2 gap-3">
+                <div class="bg-white p-3 rounded-md border-1-2 border-indigo-500 ">
+                <h4 class="font-semibold text-center"> Donate for Khairbangla East Side Mosque, thana Sadar </h4>
+                </div>
+
+                </div>
             
         
             <main class="p-4">
@@ -32,13 +39,15 @@
                     <div class="bg-white p-4 rounded-lg shadow-md flex flex-col md:flex-row">
                         <img src="./assets/3 front.jpg" alt="Flood Relief  " class="w-full md:w-1/3 rounded-md">
                         <div class="p-4">
-                            <div id="Donate-amount" class="text-yellow-500 font-semibold"> 9400</div>
-                            <h2 class="font-bold text-lg">Donate for Khairbangla East Side Mosque, Netrakona Sadar</h2>
+                            
+                            <div  id="Donate-amount" class="text-yellow-500 font-semibold">  9400 </div> <!-- jokon $<span> 9400<span> tokon NaN dakachee -->
+
+                            <h2 class="font-bold text-lg">Donate for Khairbangla East Side Mosque, thana Sadar</h2>
                             <p class="text-sm text-gray-600">"Support Khairbangla East Side Mosque, Netrakona Sadar caused significant damage Support your local mosque and be a part of something greater. Your generous donation helps maintain the mosque, support community programs, and spread peace and unity. Together, we can strengthen our faith and build a better future.</p>
-                            <input id="inputdonation1" type="text" placeholder="Write Donation Amount" class="w-full border p-2 mt-2">
+                           <input id="inputdonation1" type="text" placeholder="Write Donation Amount" class="w-full border p-2 mt-2">
 
                             <!-- donate now button 1 -->
-                            <button id="btn-donate-now1" class="bg-lime-500 text-white px-4 py-2 mt-2 rounded w-full">Donate Now</button>
+                            <button onclick="handledonate('inputdonation1')" id="btn-donate-now1" class="bg-lime-500 text-white px-4 py-2 mt-2 rounded w-full">Donate Now</button>
                         </div>
                     </div>
 
@@ -49,7 +58,7 @@
                         <div class="p-4">
                             <!-- <div class="text-yellow-500 font-semibold">💰 600 BDT</div> -->
                             <div id="Donate-amount1" class="text-yellow-500 font-semibold"> 600 </div>
-                            <h2 class="font-bold text-lg">Donate for Khairbangla East Side Mosque, Netrakona Sadar </h2>
+                            <h2 class="font-bold text-lg">Donate for Khairbangla East Side Mosque, thana Sadar </h2>
                             <p class="text-sm text-gray-600"> Donation for development and construction work at the mosque..."Support Khairbangla East Side Mosque, Netrakona Sadar caused significant damage Support your local mosque and be a part of something greater. Your generous donation helps maintain the mosque, support community programs, and spread peace and unity. Together, we can strengthen our faith and build a better future.</p>
                             <input id="inputdonation2" type="text" placeholder="Write Donation Amount" class="w-full border p-2 mt-2">
 
@@ -65,12 +74,19 @@
                         <div class="p-4">
                             <!-- <div class="text-yellow-500 font-semibold">💰 2400 BDT</div> -->
                             <div id="Donate-amount3"  class="text-yellow-500 font-semibold"> 2400 </div>
-                            <h2 class="font-bold text-lg">Donate for Khairbangla East Side Mosque, Netrakona Sadar</h2>
+                            <h2 class="font-bold text-lg">Donate for Khairbangla East Side Mosque, thana Sadar</h2>
                             <p class="text-sm text-gray-600">To please Allah, donate to the holy mosque and Allah's house.... "Support Khairbangla East Side Mosque, Netrakona Sadar caused significant damage Support your local mosque and be a part of something greater. Your generous donation helps maintain the mosque, support community programs, and spread peace and unity. Together, we can strengthen our faith and build a better future.</p>
                             <input id="inputdonation3" type="text" placeholder="Write Donation Amount" class="w-full border p-2 mt-2">
                             
                             <!-- donate now button 3-->
                             <button id="btn-donate-now3" class="bg-lime-500 text-white px-4 py-2 mt-2 rounded w-full">Donate Now</button>
+
+                            <!--- transaction start-->
+                            <div id="Transaction-section">
+                                <h2 class=" text-5xl text-center"> transaction history </h2>
+
+                            </div>
+                            <!--- transaction end-->
 
                         </div>
                     </div>

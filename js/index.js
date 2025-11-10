@@ -1,11 +1,12 @@
 const donationButton = document.getElementById("donation-tab");
+// let donations = []
 donationButton.addEventListener('click',function(){
    
     const inputdonation = parseFloat(document.getElementById("inputdonation").value);
     const inputdonation1 = parseFloat(document.getElementById("inputdonation1").value);
     const inputdonation2 = parseFloat(document.getElementById("inputdonation2").value);
 
-    console.log({inputdonation,inputdonation1,inputdonation2});
+    console.table({inputdonation,inputdonation1,inputdonation2});
 });
 
 
@@ -31,7 +32,33 @@ donationButton.addEventListener('click',function(){
     );
     // donationtab.classList.add("text-gray-200");   // [note : use this line 32 but one  features ] 
   
-    document.getElementById("donation-form").classList.add("hidden");
+   
+ document.getElementById("donation-form").classList.add("hidden");
+//  const historyContainer = document.getElementById("div");
+//  historyContainer.innerHTML= " " 
 
-    console.log("connected....")
+//    const historyitem = document.createElement("history-list");
+//    historyitem.className = 'bg-white p-3 rounded-md border-1-2 border-indigo-500'
+//    historyitem.innerHTML= `
+
+//    `
+
+document.getElementById('show-transtion-history')
+.addEventListener('click',function(){
+
+    showSectionById('Transaction-section')
+
+})
+
+ historyContainer.appendChild(historyitem,);
+
+
+
+
+
+
+
+
  });
+
+
